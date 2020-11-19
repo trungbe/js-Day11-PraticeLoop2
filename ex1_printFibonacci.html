@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In số Fibonacci</title>
+</head>
+<body>
+<button onclick="printNextFibonacci()">In số Fibonacci </button>
+<p id="print"></p>
+<script>
+
+    let f0 = 0;
+    let f1 = 1;
+    let f2;
+    document.getElementById("print").innerHTML= "0 1 ";
+
+    function printNextFibonacci() {
+
+        f2 = f0 + f1;
+        f0 = f1;
+        f1 = f2;
+        document.getElementById("print").innerHTML = document.getElementById("print").innerHTML + " " + f2;
+    }
+</script>
+</body>
+</html>
